@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+}
+
+body {
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-links a:hover{
+  color: #87CEEB
+}
+
+.logo {
+  width: 100px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Aligns logo to the left and links to the right */
+  align-items: center; /* Vertically centers the items */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  margin-left: 20px; /* Adjust spacing between links */
+  text-decoration: none;
+  color: #ffffff; /* Link color */
+}
+
+.navbar-links a:hover {
+  color: #87CEEB; /* Hover color */
+}
+
+h2,li,q,p{
+  color: #ffffff;
+  margin: 40px;
+}
+
+h1{
+  color: #ffff;
+  margin: 40px;
+  Font-size: 80px;
+}
+
+.headshot{
+  margin-top: -250px;
+  float: right;
+  Width: 300px;
+  Height: 300px;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+footer {
+  background-color: black;
+  position: flex;
+  width: 100%;
+  
+}
+.mailing-list{
+  margin: 0; 
+  text-align: left;
+}
+.talk-section{
+  margin-left: 300px;
+  margin-top: -10px;
+}
+.connect{
+  text-align: center;
+}
+/* Style the form container */
+form {
+  margin: 0 20px; /* Center the form horizontally */
+  margin-top: -50px;
+  max-width: 200px; /* Set the maximum width of the form */
+  text-align: left; /* Center align the form elements */
+}
+
+/* Style the email input field */
+input[type="email"] {
+  width: 100%; /* Set the input field width to 100% */
+  padding: 10px; /* Add padding to the input field */
+  margin-bottom: 10px; /* Add margin at the bottom of the input field */
+  border: 1px solid #ccc; /* Add border to the input field */
+  border-radius: 5px; /* Add border radius to the input field */
+}
+
+input[type="name"] {
+  width: 100%; /* Set the input field width to 100% */
+  padding: 10px; /* Add padding to the input field */
+  margin-bottom: 10px; /* Add margin at the bottom of the input field */
+  border: 1px solid #ccc; /* Add border to the input field */
+  border-radius: 5px; /* Add border radius to the input field */
+}
+
+.submit {
+  width: calc(50% - 5px); /* Set the button width to 50% of the container width with a gap of 5px between the inputs */
+  padding: 10px; /* Add padding to the button */
+  background-color: #007bff; /* Set background color of the button */
+  color: #fff; /* Set text color of the button */
+  border: none; /* Remove border from the button */
+  border-radius: 5px; /* Add border radius to the button */
+  cursor: pointer; /* Add pointer cursor to the button */
+  margin-left: auto; /* Move the button to the right by pushing it to the end of the flex container */
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Align items horizontally in the center */
+  align-items: center; /* Align items vertically */
+  margin-top: 60px; /* Adjust the top margin as needed */
+}
+
+.social-icons img {
+  width: 50px; /* Set the width of the icons */
+  height: 50px; /* Set the height of the icons */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  border-radius: 50%;
+  fill: white; /* Change the fill color of the SVG icons */
+  margin: 0 200px;
+}
+
+
+.copyright{
+  color:#888;
+}
+
