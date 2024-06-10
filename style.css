@@ -2,10 +2,13 @@
   /* Styles for screens smaller than 768px */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 body {
   background-color: #262626;
   margin: 0;
   padding: 0;
+  font-family:"Nunito Sans", sans-serif;
 }
 
 .navbar-links a{
@@ -53,6 +56,10 @@ h1{
   Font-size: 80px;
 }
 
+h3{
+  color:#ffff;
+}
+
 .headshot{
   margin-top: -250px;
   float: right;
@@ -67,6 +74,56 @@ h1{
 .text-center{
   text-align: center;
 }
+
+section h3{
+  text-decoration: underline;
+}
+
+section > h3{
+  letter-spacing: 1px;
+}
+
+.box {
+display: flex;
+}
+.flex-container{
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container > div{
+  width: 50%;
+}
+
+@media screen and (max-width: 576px){
+  input[type="email"]{
+    font-size:14px;
+  }
+}
+
+.flex-container {
+align-items:center;
+justify-content: center;
+flex-direction: column-reverse;
+}
+
+.flex-container > div {
+  width: 100%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 250px;
+  gap: 10px;
+}
+
+.grid-container>div{
+  background: white;
+  padding: 10px;
+}
+/* https://www.w3schools.com/css/css3_flexbox.asp */
 
 
 footer {
@@ -101,6 +158,7 @@ input[type="email"] {
   margin-bottom: 10px; /* Add margin at the bottom of the input field */
   border: 1px solid #ccc; /* Add border to the input field */
   border-radius: 5px; /* Add border radius to the input field */
+  font-size: 20px;
 }
 
 input[type="name"] {
@@ -114,7 +172,7 @@ input[type="name"] {
 .submit {
   width: calc(50% - 5px); /* Set the button width to 50% of the container width with a gap of 5px between the inputs */
   padding: 10px; /* Add padding to the button */
-  background-color: #007bff; /* Set background color of the button */
+  background-color: #87CEEB; /* Set background color of the button */
   color: #fff; /* Set text color of the button */
   border: none; /* Remove border from the button */
   border-radius: 5px; /* Add border radius to the button */
@@ -127,6 +185,11 @@ input[type="submit"]:hover {
   background-color: #0056b3; /* Change background color on hover */
 }
 
+@media screen and (max-width: 576px){
+  input[type="email"] {
+    font-size:14px;
+  }
+}
 .social-icons {
   display: flex;
   justify-content: center; /* Align items horizontally in the center */
