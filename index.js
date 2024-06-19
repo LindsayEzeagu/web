@@ -463,3 +463,41 @@ while (q < fruitAndVeg.length) {
   console.log(q);
 }
 console.log(noAvocados);
+
+
+// Javascript 9 
+
+// const noAvocado = fruitAndVeg.filter(fruit => !fruit.includes("avocado"));
+// console.log(noAvocado);
+
+const evenNumbers = [2, 4, 6, 8, 10];
+
+// using for loop and empty to achieve .map method
+
+
+const eventNumbersDoubled = [];
+
+for (let i = 0; i < eventNumbers.length; i++){
+  let doubled = evenNumbers[i] * 2;
+  eventNumbersDoubled.push(doubled);
+}
+
+console.log(evenNumbersDoubled);
+
+
+//working with .map method
+const numbersDoubled = evenNumbers.map(num) => num * 2;
+console.log(numbersDoubled);
+
+// chaining methods (using .map and filter together)
+const numbersDoubledAndGreaterThanTen = evenNumbers
+.map((num) => num * 2)
+.filter((num) => num > 10);
+
+console.log(numbersDoubledAndGreaterThanTen); // [12 , 16 , 20]
+
+//go live live server //
+
+// Dom representation 
+
+ 
