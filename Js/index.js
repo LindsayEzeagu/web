@@ -1,3 +1,15 @@
+// Javascript 12 - import all modules 
+import brushTeeth from "./Modules/brushTeeth";
+import closeEyes from "./Modules/closeEyes";
+import getIntoBed from "./Modules/getIntoBed";
+import putOnClothes from "./Modules/PutOnClothes";
+import skincare from "./Modules/skincare";
+import sleep from "./Modules/sleep";
+import sortOutHair from "./Modules/sortOutHair";
+import turnOffLights from "./Modules/turnOffLights";
+
+
+
 console.log('I am testing out the console');
 
 var minVotingAge = 18;
