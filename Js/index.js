@@ -1,14 +1,12 @@
 // Javascript 12 - import all modules 
-import brushTeeth from "./Modules/brushTeeth";
-import closeEyes from "./Modules/closeEyes";
-import getIntoBed from "./Modules/getIntoBed";
-import putOnClothes from "./Modules/PutOnClothes";
-import skincare from "./Modules/skincare";
-import sleep from "./Modules/sleep";
-import sortOutHair from "./Modules/sortOutHair";
-import turnOffLights from "./Modules/turnOffLights";
-
-
+import brushTeeth from "./Modules/brushTeeth.js";
+import closeEyes from "./Modules/closeEyes.js";
+import getIntoBed from "./Modules/getIntoBed.js";
+import putOnClothes from "./Modules/PutOnClothes.js";
+import skincare from "./Modules/skincare.js";
+import sleep from "./Modules/sleep.js";
+import sortOutHair from "./Modules/sortOutHair.js";
+import turnOffLights from "./Modules/turnOffLights.js";
 
 console.log('I am testing out the console');
 
@@ -295,9 +293,10 @@ function calculateGrade(score) {
 }else {
   return "Invalid";
 }
+}
 
-const grade = calculateGrade(76);
-console.log("Your grade is: " + grade);
+// const grade = calculateGrade(76);
+// console.log("Your grade is: " + grade);
 
 // Javascript 7
 
@@ -305,8 +304,8 @@ console.log("Your grade is: " + grade);
 // const currentDay = new Date().getDay();
 // console.log(new Date());
 
-const currentDay = "today";
-console.log(currentDay);
+// const currentDay = "today";
+// console.log(currentDay);
 
 switch(currentDay) {
   case 0:
@@ -355,12 +354,11 @@ function randomNumber(){
 }
 
 // while loop - random 
-let counts = 1;
-while (counts < 10) {
-  console.log(randomNumber());
-
-  counts = counts + 1;
-}
+// let counts = 1;
+// while (counts < 10) {
+//   console.log(randomNumber());
+//   counts = counts + 1;
+// }
 
 // for loop 
 let totalValue = 0;
@@ -498,7 +496,7 @@ console.log(evenNumbersDoubled);
 
 
 //working with .map method
-const numbersDoubled = evenNumbers.map(num) => num * 2;
+const numbersDoubled = evenNumbers.map(num => num * 2);
 console.log(numbersDoubled);
 
 // chaining methods (using .map and filter together)
@@ -512,4 +510,19 @@ console.log(numbersDoubledAndGreaterThanTen); // [12 , 16 , 20]
 
 // Dom representation 
 
- 
+/// Javascript 12 - MODULES
+
+function getReadyForBed() {
+  brushTeeth();
+  closeEyes();
+  getIntoBed();
+  putOnClothes();
+  skincare();
+  sleep();
+  sortOutHair();
+  turnOffLights();
+  
+}
+getReadyForBed();
+
+
