@@ -78,16 +78,22 @@ class ClickButton extends React.Component {
   }
 }
 
+// <div>
+  //   <p>This is a paragraph</p>
+  // </div> I am creating this using below 
+  
 /* Another class component */
 class TestComponent extends React.Component {
   constructor(props) {
     super(props);
   }
 
+  
+
   render() {
     return React.createElement(
-      "div",
-      {},
+      "div", // no attributes such as id and class 
+      {}, //empty object
       React.createElement("p", {}, "This is a paragraph")
     );
   }
